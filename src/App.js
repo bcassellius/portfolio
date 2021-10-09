@@ -10,7 +10,7 @@ import About from './components/About';
 function App() {
   return (
     <div>
-      {/* <Navigation></Navigation> */}
+      <Navigation></Navigation>
       <main>
         {/* <Header></Header> */}
         {/* <ContactForm></ContactForm> */}

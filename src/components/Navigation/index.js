@@ -2,9 +2,24 @@ import react from "react";
 
 function Navigation () {
 
-    // return (
-
-    // );
+    return(
+        <nav>
+            <ul className="flex-row">
+                <li>
+                    <span>About me</span>
+                </li>
+                <li>
+                    <span>Portfolio</span>
+                </li>
+                <li>
+                    <span>Resume</span>
+                </li>
+                <li>
+                    <span>Contact</span>
+                </li>
+            </ul>
+        </nav>
+    );
 }
 
 export default Navigation;
