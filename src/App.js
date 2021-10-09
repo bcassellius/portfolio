@@ -13,10 +13,10 @@ function App() {
       <Navigation></Navigation>
       <main>
         {/* <Header></Header> */}
-        {/* <ContactForm></ContactForm> */}
         <About></About>
         {/* <Portfolio></Portfolio> */}
         {/* <Resume></Resume> */}
+        <ContactForm></ContactForm>
         {/* <Footer></Footer> */}
       </main>
     </div>
