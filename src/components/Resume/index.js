@@ -2,9 +2,9 @@ import react from "react";
 
 function Resume() {
 
-    return(
+    // return(
 
-    );
+    // );
 }
 
 export default Resume;

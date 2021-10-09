@@ -2,9 +2,9 @@ import react from "react";
 
 function Modal() {
 
-    return(
+    // return(
 
-    );
+    // );
 }
 
 export default Modal;

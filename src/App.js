@@ -5,18 +5,19 @@ import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 import Project from './components/Portfolio';
 import ContactForm from './components/Contact';
+import About from './components/About';
 
 function App() {
   return (
     <div>
-      <Navigation></Navigation>
+      {/* <Navigation></Navigation> */}
       <main>
-        <Header></Header>
-        <ContactForm></ContactForm>
+        {/* <Header></Header> */}
+        {/* <ContactForm></ContactForm> */}
         <About></About>
-        <Portfolio></Portfolio>
-        <Resume></Resume>
-        <Footer></Footer>
+        {/* <Portfolio></Portfolio> */}
+        {/* <Resume></Resume> */}
+        {/* <Footer></Footer> */}
       </main>
     </div>
   );
