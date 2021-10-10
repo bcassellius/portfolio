@@ -1,24 +1,42 @@
-import react from "react";
+import react, {useEffect} from "react";
 
-function Navigation () {
+function Navigation (props) {
+    const {
+        categories = [],
+        setCurrentCategory,
+        currentCategory,
+        contactSelected,
+        setContactSelected
+    } = props;
+
+    useEffect(() => {
+        document.title = currentCategory.name;}, [currentCategory]);
 
     return(
-        <nav>
-            <ul className="flex-row">
-                <li>
-                    <span>About me</span>
-                </li>
-                <li>
-                    <span>Portfolio</span>
-                </li>
-                <li>
-                    <span>Resume</span>
-                </li>
-                <li>
-                    <span>Contact</span>
-                </li>
-            </ul>
-        </nav>
+        <header>
+            <h2>
+                <a href="/">Bri Cassellius</a>
+            </h2>
+            <nav>
+                <ul className="flex-row">
+                {categories.map((category) => (
+                    <li className={
+                        `mx-1 ${currentCategory.item === category.item && !contactSelected && 'navActive'}`
+                    } key={category.item}>
+                        <span onClick={() => {
+                            setCurrentCategory(category);
+                            setContactSelected(false);
+                        }}></span>
+                    </li>        
+                ))}
+                    <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+                        <span onClick={() => setContactSelected(true)}>
+                            Contact
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     );
 }
 
