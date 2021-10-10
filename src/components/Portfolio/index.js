@@ -1,63 +1,17 @@
-import React, { useState } from 'react';
-import Modal from '../Modal';
+import React from "react";
+import { capitalizeFirstLetter } from '../../utils/helpers';
+import photo from "../../assets/images/portfolio/books.png";
+import Projects from '../Projects'
 
-const Portfolio = ({ category }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [photos] = useState([
-        {
-          name: 'weather',
-          category: 'Portfolio',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-          name: 'database',
-          category: 'Portfolio',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-          name: 'books',
-          category: 'Portfolio',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-          name: 'utopia',
-          category: 'Portfolio',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-          name: 'budget',
-          category: 'Portfolio',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-          name: 'notes',
-          category: 'Portfolio',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        }
-    ]);
+function Portfolio({currentCategory}) {
+  const { name, description } =  currentCategory;
 
-    const [currentPhoto, setCurrentPhoto] =useState();
-    const currentPhotos = photos.filter((photo) => photo.category === category);
-    const toggleModal = (image, i) => {
-      setCurrentPhoto({...image, index: i})
-      setIsModalOpen(!isModalOpen);
-    } 
-    return (
-      <div>
-        {isModalOpen && (<Modal currentPhoto={currentPhoto} onClose={toggleModal} />)}
-          <div className="flex-row">
-          {currentPhotos.map((image, i) => (
-            <img
-              src={require(`../../assets/images/${category}/${image.name}.png`).default} //.default was discussed in office hours
-              alt={image.name}
-              className="img-thumbnail mx-1"
-              onClick={() => toggleModal(image, i)}
-              key={image.name}
-            />
-          ))}
-        </div>
-      </div>
-    );
-  }
-  
-  export default Portfolio;
+  return (
+    <section>
+      <h1>{name}</h1>
+      <p>{description}</p>
+      <Projects category={currentCategory.name} />
+    </section>
+  );
+}
+export default Portfolio;
