@@ -4,7 +4,7 @@ import avitar from "../../assets/images/avitar.png"
 function About() {
 
     return(
-        <div>
+        <section>
             <h1 id="about">Bri Cassellius</h1>
             <img src={avitar}></img>
             <p class="me">
@@ -16,7 +16,7 @@ function About() {
             <p class="me">
                 Excited to start on my coding journey.
             </p>
-        </div>
+        </section>
     );
 }
 

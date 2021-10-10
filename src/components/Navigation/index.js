@@ -1,38 +1,43 @@
-import react, {useEffect} from "react";
+import React, {useEffect} from 'react';
 
-function Navigation (props) {
+function Navigation(props) {
     const {
         categories = [],
         setCurrentCategory,
         currentCategory,
-        contactSelected,
-        setContactSelected
     } = props;
 
     useEffect(() => {
-        document.title = currentCategory.name;}, [currentCategory]);
+        document.title = currentCategory.name
+      }, [currentCategory]);
+// function categorySelected(name) {
+//     console.log(`${name} clicked`)
+// }
 
-    return(
-        <header>
-            <h2>
+
+return (
+    <header>
+        <h2>
                 <a href="/">Bri Cassellius</a>
-            </h2>
-            <nav>
-                <ul className="flex-row">
-                {categories.map((category) => (
-                    <li className={
-                        `mx-1 ${currentCategory.name === category.name && !contactSelected && 'navActive'}`} 
-                    key={category.name}>{category.name}
-                        <span onClick={() => {
-                            setCurrentCategory(category);
-                            setContactSelected(false);
-                        }}></span>
-                    </li>        
-                ))}
-                </ul>
-            </nav>
-        </header>
-    );
+        </h2>
+        <nav>
+            <ul className="flex-row">
+            {categories.map((category) => (
+                <li className={`mx-1 ${
+                    currentCategory.name === category.name && 'navActive'
+                }`} key={category.name}>
+                    <span onClick= {() => {
+                        setCurrentCategory(category)
+                    }}
+                    >
+                        {category.name}
+                    </span>
+                </li>
+            ))}
+            </ul>
+        </nav>
+    </header>
+  );
 }
 
 export default Navigation;
