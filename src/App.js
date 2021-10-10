@@ -12,6 +12,7 @@ function App() {
     { name: 'About Me', description: 'Info about Bri Cassellius' },
     { name: 'Resume', description: 'My qualifications' },
     { name: 'Portfolio', description: 'Samples of my Work' },
+    { name: 'Contact', dexription: 'Contact me with any questions/comments.'}
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
