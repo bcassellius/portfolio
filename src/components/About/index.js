@@ -1,5 +1,5 @@
 import react from "react";
-import avitar from "../../assets/small/avitar.png"
+import avitar from "../../assets/images/avitar.png"
 
 function About() {
 
