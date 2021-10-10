@@ -17,7 +17,7 @@ function App() {
         {/* <Portfolio></Portfolio> */}
         {/* <Resume></Resume> */}
         <ContactForm></ContactForm>
-        {/* <Footer></Footer> */}
+        <Footer></Footer>
       </main>
     </div>
   );
