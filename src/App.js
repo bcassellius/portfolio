@@ -1,10 +1,10 @@
 import './App.css';
-import react, { useState } from 'react';
-import Header from './components/Header';
+import React, { useState } from 'react';
 import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
+import Projects from './components/Projects';
 import Resume from './components/Resume';
 import ContactForm from './components/Contact';
 
@@ -17,8 +17,6 @@ function App() {
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
-  const [contactSelected, setContactSelected] = useState(false);
-
 
   return (
     <div>
@@ -26,14 +24,11 @@ function App() {
         categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
       ></Navigation>
       <main>
-        {/* <Header></Header> */}
+        <Portfolio currentCategory={currentCategory}></Portfolio>
         <About></About>
-        <Portfolio></Portfolio>
-        {/* <Resume></Resume> */}
+        <Resume></Resume>
         <ContactForm></ContactForm>
         <Footer></Footer>
       </main>
