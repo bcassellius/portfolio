@@ -54,6 +54,7 @@ const Projects = ({category}) => {
           <img
             src={require(`../../assets/images/${i}.png`).default}
             alt={image.name}
+            height="250"
             className="img-thumbnail mx-1"
             onClick={() => toggleModal(image, i)}
             key={image.name}
