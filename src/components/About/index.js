@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import avitar from "../../assets/images/avitar.png"
 
 function About() {
