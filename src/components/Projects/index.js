@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import Modal from '../Modal';
 
-
 const Projects = ({category}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentPhoto, setCurrentPhoto] = useState();
-
+  
   const [photos] = useState([
     {
       name: 'weather',
@@ -39,22 +37,23 @@ const Projects = ({category}) => {
     }
   ]);
 
+  const [currentPhoto, setCurrentPhoto] = useState();
   const currentPhotos = photos.filter((photo) => photo.category === category);
-    
+  
   const toggleModal = (image, i) => {
     setCurrentPhoto({ ...image, index: i });
     setIsModalOpen(!isModalOpen);
-    };
+  }
 
   return(
     <div>
-      {isModalOpen && <Modal onClose={toggleModal} currentPhoto={currentPhoto} />}
+      {isModalOpen && (<Modal currentPhoto={currentPhoto} onClose={toggleModal}/>)}
       <div className="flex-row">
-      {currentPhotos.map((image, i) => (
+        {currentPhotos.map((image, i) => (
           <img
             src={require(`../../assets/images/${i}.png`).default}
             alt={image.name}
-            height="250"
+            height="200"
             className="img-thumbnail mx-1"
             onClick={() => toggleModal(image, i)}
             key={image.name}
@@ -64,4 +63,4 @@ const Projects = ({category}) => {
     </div>
   );
 }
-export default Projects
+export default Projects;

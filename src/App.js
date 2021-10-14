@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
-import Projects from './components/Projects';
+// import Projects from './components/Projects';
 import Resume from './components/Resume';
 import ContactForm from './components/Contact';
 
@@ -13,7 +13,7 @@ function App() {
     { name: 'About Me', description: 'Info about Bri Cassellius' },
     { name: 'Resume', description: 'My qualifications' },
     { name: 'Portfolio', description: 'Samples of my Work' },
-    { name: 'Contact', dexription: 'Contact me with any questions/comments.'}
+    { name: 'Contact', desription: 'Contact me with any questions/comments.'}
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
@@ -26,10 +26,10 @@ function App() {
         currentCategory={currentCategory}
       ></Navigation>
       <main>
-        <Portfolio currentCategory={currentCategory}></Portfolio>
-        <About></About>
-        <Resume></Resume>
-        <ContactForm></ContactForm>
+        {currentCategory.name === "Portfolio" && <Portfolio currentCategory={currentCategory}></Portfolio>}
+        {currentCategory.name === "About Me" &&  <About currentCategory={currentCategory}></About> }
+        {currentCategory.name === "Resume" &&  <Resume currentCategory={currentCategory}></Resume>}
+        {currentCategory.name === "Contact" &&  <ContactForm currentCategory={currentCategory}></ContactForm>}
         <Footer></Footer>
       </main>
     </div>
