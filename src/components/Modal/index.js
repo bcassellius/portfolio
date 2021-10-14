@@ -8,12 +8,11 @@ const Modal = ({ onClose, currentPhoto }) => {
           <div className="modalContainer">
             <h3 className="modalTitle">{name} </h3>
                 <img src={require(`../../assets/images/${index}.png`).default} height="500" alt="current category" /> 
-                <button onClick={event => window.location.href=`${url}`}>Visit this App</button>
-                <button onClick={event => window.location.href=`${github}`}>Check Out the Github Repository</button>
-                {/* <Link to=" https://dry-wildwood-65158.herokuapp.com/">Deployed App</Link> */}
-                <p>{description}</p>
+                <button onClick={() => window.open(`${url}`, `_blank`)}>Visit this App</button>
+                <button onClick={() => window.open(`${github}`, `_blank`)}>Check Out the Github Repository</button>
+                <p className="modalDescription">{description}</p>
                 <button type="button" onClick={onClose}>
-                    Close this modal
+                    Back to Portfolio
                 </button>
             </div>
         </div>
