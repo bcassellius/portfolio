@@ -8,10 +8,10 @@ const Modal = ({ onClose, currentPhoto }) => {
           <div className="modalContainer">
             <h3 className="modalTitle">{name} </h3>
                 <img src={require(`../../assets/images/${index}.png`).default} height="500" alt="current category" /> 
-                <button onClick={() => window.open(`${url}`, `_blank`)}>Visit this App</button>
-                <button onClick={() => window.open(`${github}`, `_blank`)}>Check Out the Github Repository</button>
+                <button className="btn modalButton" type="button" onClick={() => window.open(`${url}`, `_blank`)}>Visit this App</button>
+                <button className="btn modalButton" type="button" onClick={() => window.open(`${github}`, `_blank`)}>Check Out the Github Repository</button>
                 <p className="modalDescription">{description}</p>
-                <button type="button" onClick={onClose}>
+                <button className="btn modalButton" type="button" onClick={onClose}>
                     Back to Portfolio
                 </button>
             </div>
