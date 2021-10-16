@@ -1,6 +1,7 @@
 import React from "react";
 import avitar from "../../assets/images/avitar.png";
 import Projects from '../Projects';
+import "./style.css";
 
 function About(props) {
     const { currentCategory } = props;

@@ -1,0 +1,30 @@
+form {
+    font-size: 20px;
+}
+
+.error-text {
+    font-size: 30px;
+    color: red;
+    text-transform: capitalize;
+}
+
+#contact-form {
+    background-color: var(--background);
+    color: var(--primary);
+    font-size: 20px;
+    padding: 20px;
+    border: solid 3px var(--secondary-color);
+    width: 40%;
+    margin: 3.5%;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    border-radius: 15px;
+}
+
+input, textarea  {
+    font-size: 15pt;
+    width: 100%;
+    border-radius: 5px;
+    color: var(--tertiary);
+    padding: 7px;
+}
+

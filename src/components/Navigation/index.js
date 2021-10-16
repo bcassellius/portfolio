@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import "./style.css";
 
 function Navigation(props) {
     const {
@@ -21,7 +22,7 @@ return (
             {categories.map((category) => (
                 <li
                 className={`mx-1 ${
-                  currentCategory.name === category.name && 'navActive'
+                  currentCategory.name === category.name? 'navActive':'hoverable'
                   }`}
                 key={category.name}
                 >

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Modal from '../Modal';
+import "./style.css";
 
 const Projects = ({category}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
