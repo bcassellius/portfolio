@@ -4,7 +4,6 @@ import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
-// import Projects from './components/Projects';
 import Resume from './components/Resume';
 import ContactForm from './components/Contact';
 
@@ -12,7 +11,7 @@ function App() {
   const [categories] = useState([
     { name: 'About Me', description: 'Info about Bri Cassellius' },
     { name: 'Resume', description: 'My qualifications' },
-    { name: 'Portfolio', description: 'Samples of my Work' },
+    { name: 'Portfolio', description: 'Here are some samples of my work.' },
     { name: 'Contact', desription: 'Contact me with any questions/comments.'}
   ]);
 

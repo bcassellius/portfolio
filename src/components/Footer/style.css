@@ -8,13 +8,7 @@
    text-align: center;
 }
 
-.img-thumbnail {
-    width: auto;
-    height: 300px;
-    margin-bottom: 50px;
-    cursor: pointer;
-  }
-  
+ 
 .btn {
     background-color: var(--background);
     padding: 5px 15px;
