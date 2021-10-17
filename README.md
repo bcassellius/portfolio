@@ -2,18 +2,20 @@
 
 ## Table of Contents
 * [Description](#description)
-* [Deployed App](#installation)
-* [Usage](#usage)
+* [Deployed App](#deploy)
 * [License](#license)
 * [Contributions](#contributions)
 * [Github](#github)
 * [Questions](#questions)
 
+![image](https://user-images.githubusercontent.com/83994997/137637395-6297e2ec-3e84-468a-a487-fbb6e97411e3.png)
+
+
 <a name='description'></a>
 ## Description
 This React SPA uses JavaScript, CSS, Modals, and hyperlinks to highlight Bri Cassellius.
 
-<a name='installation'></a>
+<a name='deploy'></a>
 ## Deployed App
 The deployed app can be found at https://bcassellius.github.io/portfolio/.
 
