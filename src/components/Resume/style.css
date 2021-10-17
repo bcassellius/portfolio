@@ -1,0 +1,19 @@
+.responsive-image {
+    max-width: 800px;
+    width: 100%;
+}
+
+.download {
+    margin-bottom: 50px;
+}
+
+h3 {
+    margin: 20px;
+}
+
+
+.skill {
+    margin: 20px;
+    list-style-type: none;
+    font-size: 20px;
+}
