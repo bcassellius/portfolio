@@ -4,7 +4,7 @@
 }
 
 .download {
-    margin-bottom: 50px;
+    border-bottom: 15px;
 }
 
 h3 {
@@ -16,4 +16,5 @@ h3 {
     margin: 20px;
     list-style-type: none;
     font-size: 20px;
+    margin-bottom: 100px;
 }

@@ -5,8 +5,7 @@ function Resume() {
 
     return(
         <div>
-            <h1 className="resume">Resume</h1>
-            {/* <p>I'm new at this!</p> */}
+            <button type="button" className="btn download btn-link"><a href="../../assets/RESUME.pdf" download="bri" >Download Resume</a></button>
             <img src={require(`../../assets/images/wordcloud.png`).default} 
             className="responsive-image"
             alt="skills"
@@ -28,7 +27,6 @@ function Resume() {
                 <li>React</li>
                 <li>MERN stack</li>
             </ul>
-            <button type="button" className="btn download btn-link"><a href="../../assets/RESUME.pdf" download="bri" >Download Resume</a></button>
         </div>
 
     );
