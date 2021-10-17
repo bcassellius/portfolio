@@ -9,6 +9,7 @@
 
 h3 {
     margin: 20px;
+    font-size: 30pt;
 }
 
 
@@ -17,4 +18,19 @@ h3 {
     list-style-type: none;
     font-size: 20px;
     margin-bottom: 100px;
+}
+
+#main {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+  
+#main div {
+    -ms-flex: 1;  /* IE 10 */  
+    flex: 1;
+}
+
+@media screen and (min-width: 930px){
+    #main {display: flex;}
 }

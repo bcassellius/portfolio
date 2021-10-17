@@ -14,7 +14,8 @@ form {
     font-size: 20px;
     padding: 20px;
     border: solid 3px var(--secondary-color);
-    width: 40%;
+    width: 80%;
+    max-width: 600px;
     margin: 3.5%;
     box-shadow: 0 0 10px rgb(0 0 0 / 50%);
     border-radius: 15px;
