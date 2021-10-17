@@ -8,12 +8,15 @@ function About(props) {
     return(
         <section>
             <h1 id="about">Bri Cassellius</h1>
-            <img src={avitar}></img>
+            <img src={avitar} className="avitar"></img>
             <p class="me">
-                Completing Coding Bootcamp through UW extension.
+            MERN stack developer 
             </p>
             <p class="me">
-                Excited to start on my coding journey.
+            Building Applications * Having Fun * Developing New Skills
+            </p>
+            <p class="me">
+                Excited to start on my next coding journey with you!
             </p>
             <Projects category={currentCategory.name} />
         </section>
