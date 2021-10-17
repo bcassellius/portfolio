@@ -1,6 +1,6 @@
-.img-thumbnail {
-    width: auto;
-    height: 300px;
-    margin-bottom: 50px;
+.responsive {
+    max-height: 200px;
+    width:auto;
+    margin: 10px;
     cursor: pointer;
 }
