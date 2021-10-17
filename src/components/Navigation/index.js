@@ -15,7 +15,7 @@ function Navigation(props) {
 return (
     <header className="flex-row px-1">
         <h2 className="bri">
-                <a href="/">Bri Cassellius</a>
+                <a href="./">Bri Cassellius</a>
         </h2>
         <nav>
             <ul className="flex-row">

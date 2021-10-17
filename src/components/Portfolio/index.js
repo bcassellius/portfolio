@@ -1,6 +1,5 @@
 import React from "react";
 import Projects from '../Projects';
-import "./style.css";
 
 function Portfolio(props) {
   const { currentCategory } = props;
