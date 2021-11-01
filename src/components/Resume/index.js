@@ -6,7 +6,7 @@ function Resume() {
     return(
         <div>
             <div>
-                <button type="button" className="btn download btn-link"><a href="https://github.com/bcassellius/portfolio/raw/main/public/RESUME.pdf" download="bri" >Download Resume</a></button>
+                <button type="button" className="btn download btn-link"><a href="https://github.com/bcassellius/portfolio/raw/main/public/resume2021.pdf" download="bri" >Download Resume</a></button>
             </div>
             <img src={require(`../../assets/images/wordcloud.png`).default} 
                 className="responsive-image"
