@@ -7,6 +7,13 @@ const Projects = ({category}) => {
   
   const [photos] = useState([
     {
+      name: 'librarian',
+      category: 'Portfolio',
+      url: `https://lovely-librarian.herokuapp.com/`,
+      github: `https://github.com/bcassellius/lovely-librarian.git`,
+      description: `This is a group project responsive PWA that is used by librarians for internal library tasks. It is a MERN SPA that follows mobile-first practices and was created with React and styled using React Bootstrap and CSS. It is deployed using heroku. This app allows the user to search for books using the google books api as well as see the staff directory and events calendar.`,
+    },
+    {
       name: 'weather',
       category: 'Portfolio',
       url: `https://bcassellius.github.io/weather-dashboard/`,
