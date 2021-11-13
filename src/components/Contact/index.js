@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {validateEmail } from "../../utils/helpers";
 import "./style.css";
+import ButtonMailto from "../Link";
 
 function ContactForm() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -39,6 +40,7 @@ function ContactForm() {
     return (
       <section>
         <h1>Contact me</h1>
+        <ButtonMailto label="Write me an E-Mail" mailto="mailto:no-reply@example.com" />
         <form id="contact-form" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name">Name:</label>
