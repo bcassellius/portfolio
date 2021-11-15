@@ -40,7 +40,7 @@ function ContactForm() {
     return (
       <section>
         <h1>Contact me</h1>
-        <ButtonMailto label="Write me an E-Mail" mailto="mailto:no-reply@example.com" />
+        <button type="button" className="btn btn-link"><a class="mailto" href="mailto:bhilliker@gmail.com"target="_blank">Click to e-mail me!</a></button>
         <form id="contact-form" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name">Name:</label>
