@@ -4,7 +4,7 @@ import Navigation from './components/Navigation';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
-import ContactForm from './components/Contact';
+// import ContactForm from './components/Contact';
 
 function App() {
   const [categories] = useState([
@@ -27,7 +27,7 @@ function App() {
         {currentCategory.name === "Portfolio" && <Portfolio currentCategory={currentCategory}></Portfolio>}
         {currentCategory.name === "About Me" &&  <About currentCategory={currentCategory}></About> }
         {currentCategory.name === "Resume" &&  <Resume currentCategory={currentCategory}></Resume>}
-        {currentCategory.name === "Contact" &&  <ContactForm currentCategory={currentCategory}></ContactForm>}
+        {/* {currentCategory.name === "Contact" &&  <ContactForm currentCategory={currentCategory}></ContactForm>} */}
         <Footer></Footer>
       </main>
     </div>
