@@ -9,10 +9,10 @@ function About(props) {
             <h1 id="about">Bri Cassellius</h1>
             <img src={avitar} className="avitar"></img>
             <p class="me">
-            MERN stack developer 
+                MERN stack developer
             </p>
             <p class="me">
-            Building Applications * Having Fun * Developing New Skills
+                Building Applications * Having Fun * Developing New Skills
             </p>
             <p class="me">
                 Excited to start on my next coding journey with you!
@@ -24,8 +24,11 @@ function About(props) {
                 <button type="button" className="btn btn-link"><a href="https://github.com/bcassellius" target="_blank">Github</a></button>
                 <button type="button" className="btn btn-link"><a class="mailto" href="mailto:bhilliker@gmail.com"target="_blank">Email Me</a></button>
             </div>
-            
+            <div style={{ borderTop: "2px solid #3b3355ff ", marginLeft: 20, marginRight: 20 }}></div>
             <div>
+                <div>
+                    <h1 class="look me">Take a look at some of my recent projects...</h1>
+                </div>
                 <div id="main">
                     <div>
                         <h3>Full Stack</h3>
