@@ -5,12 +5,15 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 // import ContactForm from './components/Contact';
+import Wheel from './components/Wheel/Wheel.js';
+
 
 function App() {
   const [categories] = useState([
     { name: 'About Me', description: 'Info about Bri Cassellius' },
     { name: 'Resume', description: 'My qualifications' },
     { name: 'Portfolio', description: 'Here are some samples of my work.' },
+    { name: 'Wheel', description: 'Voila!'},
     // { name: 'Contact', desription: 'Contact me with any questions/comments.'}
   ]);
 
@@ -27,6 +30,7 @@ function App() {
         {currentCategory.name === "Portfolio" && <Portfolio currentCategory={currentCategory}></Portfolio>}
         {currentCategory.name === "About Me" && <About currentCategory={currentCategory}></About>}
         {currentCategory.name === "Resume" &&  <Resume currentCategory={currentCategory}></Resume>}
+        {currentCategory.name === "Wheel" && <Wheel currentCategory={currentCategory}></Wheel>}
         {/* {currentCategory.name === "Contact" &&  <ContactForm currentCategory={currentCategory}></ContactForm>} */}
         <Footer></Footer>
       </main>
