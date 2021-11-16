@@ -1,4 +1,5 @@
 import React from "react";
+import Projects from '../Projects';
 import avitar from "../../assets/images/avitar.png";
 import "./style.css";
 
@@ -45,6 +46,9 @@ function About(props) {
                                     alt="skills"
                                 />
                             </li>
+                            <li>
+                            <Projects stack={'full'} />
+                            </li>
                         </ul>
                     </div>
 
@@ -62,6 +66,9 @@ function About(props) {
                                     className="responsive-image"
                                     alt="skills"
                                 />
+                            </li>
+                            <li>
+                            <Projects stack={'front'} />
                             </li>
                         </ul>
                     </div>
@@ -87,10 +94,14 @@ function About(props) {
                                     alt="skills"
                                 />
                             </li>
+                            <li>
+                            <Projects stack={'back'} />
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
+            <Projects category={currentCategory.name} />
         </section>
     );
 }
