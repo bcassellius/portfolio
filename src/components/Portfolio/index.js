@@ -6,8 +6,8 @@ function Portfolio(props) {
   console.log(currentCategory);
   return (
     <section>
-      <h1 data-testid="h1tag">{currentCategory.name}</h1>
-      <p>{currentCategory.description}</p>
+      {/* <h1 data-testid="h1tag">{currentCategory.name}</h1> */}
+      {/* <p>{currentCategory.description}</p> */}
       <Projects category={currentCategory.name} />
     </section>
   );
