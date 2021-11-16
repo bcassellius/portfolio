@@ -35,16 +35,24 @@ function About(props) {
                         <h3>Full Stack</h3>
                         <ul className="skill">
                             <li>
-                                <img src={require(`../../assets/images/0.png`).default} 
-                                    className="responsive-image"
-                                    alt="skills"
-                                />
+                                <div>
+                                    <a href="https://lovely-librarian.herokuapp.com/" target="_blank">
+                                        <img src={require(`../../assets/images/0.png`).default} 
+                                            className="responsive-image"
+                                            alt="skills"
+                                        />
+                                        <p>Lovely Librarian</p>
+                                    </a>
+                                </div>
                             </li>
                             <li>
-                                <img src={require(`../../assets/images/3.png`).default} 
-                                    className="responsive-image"
-                                    alt="skills"
-                                />
+                                <a href='https://dry-wildwood-65158.herokuapp.com/' target='blank'>
+                                    <img src={require(`../../assets/images/3.png`).default} 
+                                        className="responsive-image"
+                                        alt="skills"
+                                    />
+                                    <p>Book Tracker</p>
+                                </a>
                             </li>
                             <li>
                             <Projects stack={'full'} />
@@ -56,16 +64,22 @@ function About(props) {
                         <h3>Front-End</h3>
                         <ul className="skill">
                             <li>
-                                <img src={require(`../../assets/images/4.png`).default} 
-                                    className="responsive-image"
-                                    alt="skills"
-                                />
+                                <a href='https://bcassellius.github.io/Utopia/' target='blank'>
+                                    <img src={require(`../../assets/images/4.png`).default} 
+                                        className="responsive-image"
+                                        alt="skills"
+                                    />
+                                    <p>Utopia Travel</p>
+                                </a>
                             </li>
                             <li>
-                                <img src={require(`../../assets/images/1.png`).default} 
-                                    className="responsive-image"
-                                    alt="skills"
-                                />
+                                <a href='https://bcassellius.github.io/weather-dashboard/' target='blank'>
+                                    <img src={require(`../../assets/images/1.png`).default} 
+                                        className="responsive-image"
+                                        alt="skills"
+                                    />
+                                    <p>Weather Dashboard</p>
+                                </a>
                             </li>
                             <li>
                             <Projects stack={'front'} />
@@ -77,22 +91,31 @@ function About(props) {
                         <h3>Back-End</h3>
                         <ul className="skill">
                             <li>
-                                <img src={require(`../../assets/images/2.png`).default} 
-                                    className="responsive-image"
-                                    alt="skills"
-                                />
+                                <a href='https://github.com/bcassellius/employee-tracker.git' target='blank'>
+                                    <img src={require(`../../assets/images/2.png`).default} 
+                                        className="responsive-image"
+                                        alt="skills"
+                                    />
+                                    <p>Employee Tracker</p>
+                                </a>
                             </li>
                             <li>
-                                <img src={require(`../../assets/images/5.png`).default} 
-                                    className="responsive-image"
-                                    alt="skills"
-                                />
+                                <a href='https://nameless-fortress-29034.herokuapp.com/' target='blank'>
+                                    <img src={require(`../../assets/images/5.png`).default} 
+                                        className="responsive-image"
+                                        alt="skills"
+                                    />
+                                    <p>Budget Tracker</p>
+                                </a>
                             </li>
                             <li>
-                                <img src={require(`../../assets/images/6.png`).default} 
-                                    className="responsive-image"
-                                    alt="skills"
-                                />
+                                <a href='https://secure-earth-84273.herokuapp.com/' target='blank'>
+                                    <img src={require(`../../assets/images/6.png`).default} 
+                                        className="responsive-image"
+                                        alt="skills"
+                                    />
+                                    <p>Note Taker</p>
+                                </a>
                             </li>
                             <li>
                             <Projects stack={'back'} />
@@ -101,7 +124,6 @@ function About(props) {
                     </div>
                 </div>
             </div>
-            <Projects category={currentCategory.name} />
         </section>
     );
 }

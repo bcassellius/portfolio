@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import Modal from '../Modal';
 import "./style.css";
 
-const Projects = ({stack}) => {
+const Projects = ({category}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   
   const [photos] = useState([
     {
       name: 'Lovely Librarian',
-      category: 'About Me',
+      category: 'Portfolio',
       stack: 'full',
       url: `https://lovely-librarian.herokuapp.com/`,
       github: `https://github.com/bcassellius/lovely-librarian.git`,
@@ -16,7 +16,7 @@ const Projects = ({stack}) => {
     },
     {
       name: 'Weather Dashboard',
-      category: 'About Me',
+      category: 'Portfolio',
       stack: 'front',
       url: `https://bcassellius.github.io/weather-dashboard/`,
       github: `https://github.com/bcassellius/weather-dashboard.git`,
@@ -24,14 +24,14 @@ const Projects = ({stack}) => {
     },
     {
       name: 'Employee Tracker',
-      category: 'About Me',
+      category: 'Portfolio',
       stack: 'back',
       github: `https://github.com/bcassellius/employee-tracker.git`,
       description: 'This is a CLI app created with inquirer and MySQL2. It allows the user to keep track of employees and their details. ',
     },
     {
       name: 'Book Tracker',
-      category: 'About Me',
+      category: 'Portfolio',
       stack: 'full',
       url: 'https://dry-wildwood-65158.herokuapp.com/',
       github: `https://github.com/bcassellius/book-tracker.git`,
@@ -39,7 +39,7 @@ const Projects = ({stack}) => {
     },
     {
       name: 'Utopia Travel',
-      category: 'About Me',
+      category: 'Portfolio',
       stack: 'front',
       url: `https://bcassellius.github.io/Utopia/`,
       github: `https://github.com/bcassellius/Utopia.git`,
@@ -47,7 +47,7 @@ const Projects = ({stack}) => {
     },
     {
       name: 'Budget Tracker',
-      category: 'About Me',
+      category: 'Portfolio',
       stack: 'back',
       url: `https://nameless-fortress-29034.herokuapp.com/`,
       github: `https://github.com/bcassellius/budget-tracker.git`,
@@ -55,7 +55,7 @@ const Projects = ({stack}) => {
     },
     {
       name: 'Note Taker',
-      category: 'About Me',
+      category: 'Portfolio',
       stack: 'back',
       url: `https://secure-earth-84273.herokuapp.com/`,
       github: `https://github.com/bcassellius/note-taker.git`,
@@ -64,7 +64,7 @@ const Projects = ({stack}) => {
   ]);
 
   const [currentPhoto, setCurrentPhoto] = useState();
-  const currentPhotos = photos.filter((photo) => photo.stack === stack);
+  const currentPhotos = photos.filter((photo) => photo.category === category);
   
   const toggleModal = (image, i) => {
     setCurrentPhoto({ ...image, index: i });
@@ -75,12 +75,12 @@ const Projects = ({stack}) => {
     <div>
       {isModalOpen && (<Modal currentPhoto={currentPhoto} onClose={toggleModal}/>)}
       <div className="flex-row">
-        {currentPhotos.map((image, stack, i) => (
+        {currentPhotos.map((image, i) => (
           <img
-          src={require(`../../assets/images/${stack}/${i}.png`).default}
+          src={require(`../../assets/images/${i}.png`).default}
             alt={image.name}
             className="responsive"
-            onClick={() => toggleModal(image, stack, i)}
+            onClick={() => toggleModal(image, i)}
             key={image.name}
           />
         ))}
