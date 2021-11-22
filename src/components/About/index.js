@@ -2,6 +2,17 @@ import React from "react";
 import Projects from '../Projects';
 import avitar from "../../assets/images/avitar.png";
 import "./style.css";
+import { 
+    CAccordion,
+    CAccordionItem,
+    CAccordionHeader,
+    CAccordionBody,
+    CCard,
+    CCardText,
+    CCardBody,
+    CCardLink
+} from '@coreui/react';
+
 
 function About(props) {
     const { currentCategory } = props;
@@ -44,9 +55,31 @@ function About(props) {
                                             className="responsive-image"
                                             alt="skills"
                                         />
-                                        <p>Lovely Librarian</p>
                                     </a>
-                                </div>
+                                    
+                                    <CAccordion flush activeItemKey={1}>
+                                        <CAccordionItem itemKey={1}>
+                                            <CAccordionHeader> 
+                                                Lovely Librarian
+                                            </CAccordionHeader>
+                                            <CAccordionBody>
+                                                <CCard style={{ width: '20rem' }}>
+                                                    <CCardBody>
+                                                        <CCardText>
+                                                            This is a group project responsive PWA that is used by librarians for internal library tasks. It is a MERN SPA that follows mobile-first practices and was created with React and styled using React Bootstrap and CSS. It is deployed using heroku. This app allows the user to search for books using the google books api as well as see the staff directory and events calendar.
+                                                        </CCardText>
+                                                        <CCardLink 
+                                                            href="https://github.com/bcassellius/lovely-librarian.git" target="_blank">Github Repo
+                                                        </CCardLink>
+                                                        <CCardLink  
+                                                            href="https://lovely-librarian.herokuapp.com/" target="_blank">Deployed App
+                                                        </CCardLink>
+                                                    </CCardBody>
+                                                </CCard>
+                                            </CAccordionBody>
+                                        </CAccordionItem>
+                                    </CAccordion> 
+                                </div>                               
                             </li>
                             <li>
                                 <a href='https://dry-wildwood-65158.herokuapp.com/' target='blank'>
