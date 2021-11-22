@@ -29,6 +29,9 @@ function About(props) {
             <div>
                 <div>
                     <h1 class="look me">Take a look at some of my recent projects...</h1>
+                    <h4 class="look me">
+                        For more details on these projects, check out my portfolio.
+                    </h4>
                 </div>
                 <div id="main">
                     <div>
