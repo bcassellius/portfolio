@@ -2,20 +2,19 @@ import React from "react";
 import Projects from '../Projects';
 import avitar from "../../assets/images/avitar.png";
 import "./style.css";
-import { 
-    CAccordion,
-    CAccordionItem,
-    CAccordionHeader,
-    CAccordionBody,
-    CCollapse,
-    CCard,
-    CCardText,
-    CCardBody,
-    CCardLink
-} from '@coreui/react';
 import { ExpandMore } from '@material-ui/icons';
-import { Accordion, AccordionSummary, AccordionDetails, AccordionActions, Divider, Button } from '@material-ui/core';
+import { Accordion, AccordionSummary, AccordionDetails, AccordionActions, Divider, Button,
 
+Card,
+CardActionArea,
+CardActions,
+CardContent,
+CardHeader,
+CardMedia,
+Collapse,
+Paper
+} from '@material-ui/core';
+// accordion tutorial --> https://www.freakyjolly.com/react-material-ui-accordion-tabs-tutorial-with-example/
 
 
 function About(props) {
@@ -62,44 +61,18 @@ function About(props) {
                                         />
                                     </a>
                                     <Accordion>
-
-        <AccordionSummary expandIcon={<ExpandMore />}>
-            Lovely Librarian
-        </AccordionSummary>
-
-        <AccordionDetails>
-            This is a group project responsive PWA that is used by librarians for internal library tasks. It is a MERN SPA that follows mobile-first practices and was created with React and styled using React Bootstrap and CSS. It is deployed using heroku. This app allows the user to search for books using the google books api as well as see the staff directory and events calendar.
-        </AccordionDetails>
-
-        <Divider />
-        <AccordionActions>
-          <Button size="small" onClick={() => window.open('https://github.com/bcassellius/lovely-librarian.git', '_blank')}>Github Repo</Button>
-          <Button size="small" color="primary" onClick={() => window.open('https://lovely-librarian.herokuapp.com/', '_blank')}>Deployed App</Button>
-        </AccordionActions>
-
-      </Accordion>
-                                    {/* <CAccordion flush activeItemKey={0}>
-                                    <CAccordionItem itemKey={0}>
-                                            <CAccordionHeader> 
-                                                Lovely Librarian
-                                            </CAccordionHeader>
-                                            <CAccordionBody>
-                                                <CCard style={{ width: '20rem' }}>
-                                                    <CCardBody>
-                                                        <CCardText>
-                                                            This is a group project responsive PWA that is used by librarians for internal library tasks. It is a MERN SPA that follows mobile-first practices and was created with React and styled using React Bootstrap and CSS. It is deployed using heroku. This app allows the user to search for books using the google books api as well as see the staff directory and events calendar.
-                                                        </CCardText>
-                                                        <CCardLink 
-                                                            href="https://github.com/bcassellius/lovely-librarian.git" target="_blank">Github Repo
-                                                        </CCardLink>
-                                                        <CCardLink  
-                                                            href="https://lovely-librarian.herokuapp.com/" target="_blank">Deployed App
-                                                        </CCardLink>
-                                                    </CCardBody>
-                                                </CCard>
-                                            </CAccordionBody>
-                                        </CAccordionItem>
-                                    </CAccordion>  */}
+                                        <AccordionSummary expandIcon={<ExpandMore />}>
+                                            Lovely Librarian
+                                        </AccordionSummary>
+                                        <AccordionDetails>
+                                            This is a group project responsive PWA that is used by librarians for internal library tasks. It is a MERN SPA that follows mobile-first practices and was created with React and styled using React Bootstrap and CSS. It is deployed using heroku. This app allows the user to search for books using the google books api as well as see the staff directory and events calendar.
+                                        </AccordionDetails>
+                                        <Divider />
+                                        <AccordionActions>
+                                            <Button size="small" onClick={() => window.open('https://github.com/bcassellius/lovely-librarian.git', '_blank')}>Github Repo</Button>
+                                            <Button size="small" onClick={() => window.open('https://lovely-librarian.herokuapp.com/', '_blank')}>Deployed App</Button>
+                                        </AccordionActions>
+                                    </Accordion>
                                 </div>                               
                             </li>
                             <li>
