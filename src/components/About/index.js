@@ -3,17 +3,7 @@ import Projects from '../Projects';
 import avitar from "../../assets/images/avitar.png";
 import "./style.css";
 import { ExpandMore } from '@material-ui/icons';
-import { Accordion, AccordionSummary, AccordionDetails, AccordionActions, Divider, Button,
-
-Card,
-CardActionArea,
-CardActions,
-CardContent,
-CardHeader,
-CardMedia,
-Collapse,
-Paper
-} from '@material-ui/core';
+import { Accordion, AccordionSummary, AccordionDetails, AccordionActions, Divider, Button } from '@material-ui/core';
 // accordion tutorial --> https://www.freakyjolly.com/react-material-ui-accordion-tabs-tutorial-with-example/
 
 
