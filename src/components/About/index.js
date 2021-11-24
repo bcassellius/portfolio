@@ -7,11 +7,15 @@ import {
     CAccordionItem,
     CAccordionHeader,
     CAccordionBody,
+    CCollapse,
     CCard,
     CCardText,
     CCardBody,
     CCardLink
 } from '@coreui/react';
+import { ExpandMore } from '@material-ui/icons';
+import { Accordion, AccordionSummary, AccordionDetails, AccordionActions, Divider, Button } from '@material-ui/core';
+
 
 
 function About(props) {
@@ -50,15 +54,32 @@ function About(props) {
                         <ul className="skill">
                             <li>
                                 <div>
+                                    
                                     <a href="https://lovely-librarian.herokuapp.com/" target="_blank">
                                         <img src={require(`../../assets/images/0.png`).default} 
                                             className="responsive-image"
                                             alt="skills"
                                         />
                                     </a>
-                                    
-                                    <CAccordion flush activeItemKey={1}>
-                                        <CAccordionItem itemKey={1}>
+                                    <Accordion>
+
+        <AccordionSummary expandIcon={<ExpandMore />}>
+            Lovely Librarian
+        </AccordionSummary>
+
+        <AccordionDetails>
+            This is a group project responsive PWA that is used by librarians for internal library tasks. It is a MERN SPA that follows mobile-first practices and was created with React and styled using React Bootstrap and CSS. It is deployed using heroku. This app allows the user to search for books using the google books api as well as see the staff directory and events calendar.
+        </AccordionDetails>
+
+        <Divider />
+        <AccordionActions>
+          <Button size="small" onClick={() => window.open('https://github.com/bcassellius/lovely-librarian.git', '_blank')}>Github Repo</Button>
+          <Button size="small" color="primary" onClick={() => window.open('https://lovely-librarian.herokuapp.com/', '_blank')}>Deployed App</Button>
+        </AccordionActions>
+
+      </Accordion>
+                                    {/* <CAccordion flush activeItemKey={0}>
+                                    <CAccordionItem itemKey={0}>
                                             <CAccordionHeader> 
                                                 Lovely Librarian
                                             </CAccordionHeader>
@@ -78,7 +99,7 @@ function About(props) {
                                                 </CCard>
                                             </CAccordionBody>
                                         </CAccordionItem>
-                                    </CAccordion> 
+                                    </CAccordion>  */}
                                 </div>                               
                             </li>
                             <li>
