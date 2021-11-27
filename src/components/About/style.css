@@ -37,6 +37,11 @@
     padding: 0;
 }
 
+.line {
+    border-top: 2px solid #3b3355ff ; 
+    margin: 20, 0
+}
+
 #main {
     width: 100%;
     display: block;
