@@ -8,7 +8,7 @@
 * [Github](#github)
 * [Questions](#questions)
 
-![image](https://user-images.githubusercontent.com/83994997/137637395-6297e2ec-3e84-468a-a487-fbb6e97411e3.png)
+![image](https://user-images.githubusercontent.com/83994997/143664253-756c0cfa-deaf-4db9-a475-3ee169423116.png)
 
 
 <a name='description'></a>
