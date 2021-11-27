@@ -42,23 +42,33 @@ function About(props) {
                         <h3>Full Stack</h3>
                         <ul className="skill">
                             <li>
-                                <div className='accord'>
-                                    <a href="https://lovely-librarian.herokuapp.com/" target="_blank">
-                                        <img src={require(`../../assets/images/0.png`).default} 
-                                            className="responsive-image"
-                                            alt="skills"
-                                        />
-                                    </a>
+                                <div >
+                                    <img src={require(`../../assets/images/0.png`).default} 
+                                        className="responsive-image"
+                                        alt="skills"
+                                    />
                                     <Accordion style={{background:`var(--background)`}}>
                                         <AccordionSummary expandIcon={<ExpandMore />}>
                                             Lovely Librarian
                                         </AccordionSummary>
-                                        <AccordionDetails>
+                                        <AccordionDetails className='accord' >
                                             This is a group project responsive PWA that is used by librarians for internal library tasks. It is a MERN SPA that follows mobile-first practices and was created with React and styled using React Bootstrap and CSS. It is deployed using heroku. This app allows the user to search for books using the google books api as well as see the staff directory and events calendar.
                                         </AccordionDetails>
                                         <AccordionActions>
-                                            <Button style={{ border: `2px solid #3b3355ff`}} size="small" onClick={() => window.open('https://github.com/bcassellius/lovely-librarian.git', '_blank')}>Github Repo</Button>
-                                            <Button style={{ border: `2px solid #3b3355ff`}} size="small" onClick={() => window.open('https://lovely-librarian.herokuapp.com/', '_blank')}>Deployed App</Button>
+                                            <Button 
+                                                style={{ border: `2px solid #3b3355ff`}} 
+                                                size="small" 
+                                                onClick={() => 
+                                                    window.open('https://github.com/bcassellius/lovely-librarian.git', '_blank')}>
+                                                        Github Repo
+                                            </Button>
+                                            <Button 
+                                                style={{ border: `2px solid #3b3355ff`}} 
+                                                size="small" 
+                                                onClick={() => 
+                                                    window.open('https://lovely-librarian.herokuapp.com/', '_blank')}>
+                                                        Deployed App
+                                            </Button>
                                         </AccordionActions>
                                     </Accordion>
                                 </div>                               
