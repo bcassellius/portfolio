@@ -14,6 +14,7 @@ ul.flex-row {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-radius: 5pt;
 }
 
 .mx-1.hoverable:hover {
