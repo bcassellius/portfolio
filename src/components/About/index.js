@@ -7,8 +7,7 @@ import { Accordion, AccordionSummary, AccordionDetails, AccordionActions, Button
 // accordion tutorial --> https://www.freakyjolly.com/react-material-ui-accordion-tabs-tutorial-with-example/
 
 
-function About(props) {
-    const { currentCategory } = props;
+function About() {
     return(
         <section>
             <h1 id="about">Bri Cassellius</h1>

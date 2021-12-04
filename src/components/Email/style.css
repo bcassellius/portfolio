@@ -1,0 +1,21 @@
+.detail {
+    background-color: var(--background);
+    padding: 15px 15px;
+    font-size: 25px;
+    cursor: inherit;
+    border: none;
+}
+
+.btn {
+    background-color: var(--background);
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--tertiary); 
+    color: var(--primary);
+    transition: ease background-color 250ms;
+}

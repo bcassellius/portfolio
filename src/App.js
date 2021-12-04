@@ -4,6 +4,7 @@ import Navigation from './components/Navigation';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
+import Email from './components/Email';
 // import ContactForm from './components/Contact';
 
 function App() {
@@ -11,6 +12,8 @@ function App() {
     { name: 'About Me', description: 'Info about Bri Cassellius' },
     { name: 'Resume', description: 'My qualifications' },
     { name: 'Portfolio', description: 'Here are some samples of my work.' },
+    { name: 'Contact Me', description: `Here's how to get ahold of me.`},
+
     // { name: 'Contact', desription: 'Contact me with any questions/comments.'}
   ]);
 
@@ -27,6 +30,7 @@ function App() {
         {currentCategory.name === "Portfolio" && <Portfolio currentCategory={currentCategory}></Portfolio>}
         {currentCategory.name === "About Me" && <About currentCategory={currentCategory}></About>}
         {currentCategory.name === "Resume" &&  <Resume currentCategory={currentCategory}></Resume>}
+        {currentCategory.name === "Contact Me" &&  <Email currentCategory={currentCategory}></Email>}
         {/* {currentCategory.name === "Contact" &&  <ContactForm currentCategory={currentCategory}></ContactForm>} */}
         <Footer></Footer>
       </main>
